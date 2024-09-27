@@ -55,7 +55,6 @@ class DatabaseManager {
     await expensesBox.delete(username);
   }
 
-  // Função para salvar a foto de perfil (base64)
   Future<void> saveProfilePhoto(String username, String base64Image) async {
     final box = await openUserBox();
     final userData = box.get(username);
